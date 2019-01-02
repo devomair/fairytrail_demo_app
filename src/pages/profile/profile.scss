@@ -1,3 +1,47 @@
 page-profile {
-
+	.image-container {
+        min-height: 200px;
+        background-size: cover;
+    }
+	
+	.profilePhotoEdit-wrap {		
+		font-weight: 400;
+		font-size: 15px;
+		line-height: 21px;
+		display: table;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		max-height: 50px;
+		text-align: center;
+		color: #fdfdfd;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		-webkit-transition: background .3s ease-in-out,max-height 150ms ease-in-out;
+		-o-transition: background .3s ease-in-out,max-height 150ms ease-in-out;
+		transition: background .3s ease-in-out,max-height 150ms ease-in-out;
+	}
+	
+	.profilePhotoEdit-banner {
+		background: #367aa3;
+		width: 94%;
+		height: 50px;
+		bottom: 0;
+		/* left: 0; */
+		position: absolute;
+		display: table;
+		opacity: .75;
+	}
+	.profilePhotoEdit-inner {
+		display: table-cell;
+		vertical-align: middle;
+	}
+	.profilePhotoEdit-text {
+		position: relative;
+		top: -1px;
+		display: inline-block;
+		margin: 0 5px;
+	}
 }
