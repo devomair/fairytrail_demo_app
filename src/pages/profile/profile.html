@@ -9,7 +9,7 @@
 
 <ion-content padding>
   <h3 *ngIf="images.length == 0" text-center>Please Select Image!</h3>
- 
+ <!--
   <ion-list>
     <ion-item *ngFor="let img of images; index as pos" text-wrap>
 
@@ -24,12 +24,40 @@
         <ion-icon slot="icon-only" name="trash"></ion-icon>
       </button>
     </ion-item>
-  </ion-list>
+  </ion-list>-->
 <!--
   <button ion-button (click)="selectImage($event)">
       Open Camera
   </button>
 -->
+
+
+ 
+  <div>
+    <!-- Responsive Layout with Ion Grid-->
+    <ion-grid>
+      <ion-row>
+        <ion-col col-6 col-md-4 col-xl-3 *ngFor="let img of images; index as pos">
+          <div (click)="selectImage(pos)" class="image-container" [style.background-image]="'url(' + img.name + ')'">
+			<span class="profilePhotoEdit-banner"></span>
+			<div class="profilePhotoEdit-wrap">
+			<div class="profilePhotoEdit-inner">
+			<span class="profilePhotoEdit-icon">
+				<ion-icon name="camera"></ion-icon>
+			</span>
+			<span class="profilePhotoEdit-text" data-i18n="profile.photo.change" aria-label="change photo press enter to upload">
+				Change Photo
+			</span>
+			</div>
+		</div>
+			
+		  </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+   </div>
+ 
+    <!-- More Pinterest floating gallery style -->
 </ion-content>
  
 <ion-footer>
