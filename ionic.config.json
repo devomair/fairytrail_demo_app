@@ -1,5 +1,7 @@
 {
   "name": "fairytrail_assignment",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "ionic-angular"
 }
