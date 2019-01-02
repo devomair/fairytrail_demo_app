@@ -9,30 +9,7 @@
 
 <ion-content padding>
   <h3 *ngIf="images.length == 0" text-center>Please Select Image!</h3>
- <!--
-  <ion-list>
-    <ion-item *ngFor="let img of images; index as pos" text-wrap>
-
-      <ion-label>
-        <img (click)="selectImage(pos)" src="{{img.name}}" >
-
-      </ion-label>
-      <button ion-button slot="end" fill="clear" (click)="startUpload(img)">
-        <ion-icon slot="icon-only" name="cloud-upload"></ion-icon>
-      </button>
-      <button ion-button slot="end" fill="clear" (click)="deleteImage(img, pos)">
-        <ion-icon slot="icon-only" name="trash"></ion-icon>
-      </button>
-    </ion-item>
-  </ion-list>-->
-<!--
-  <button ion-button (click)="selectImage($event)">
-      Open Camera
-  </button>
--->
-
-
- 
+  
   <div>
     <!-- Responsive Layout with Ion Grid-->
     <ion-grid>
