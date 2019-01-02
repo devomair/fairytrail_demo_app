@@ -1,7 +1,8 @@
 page-profile {
 	.image-container {
-        min-height: 200px;
-        background-size: cover;
+     min-height: 200px;
+     background-size: contain;
+		 background-repeat: no-repeat;
     }
 	
 	.profilePhotoEdit-wrap {		
